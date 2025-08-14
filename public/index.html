@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Press Release Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 12px; }
+    textarea, input, button { width: 100%; margin: 10px 0; padding: 10px; box-sizing: border-box; }
+    button { cursor: pointer; }
+    #output { white-space: pre-wrap; border: 1px solid #ddd; padding: 10px; min-height: 160px; }
+    small.hint { color: #666; }
+  </style>
+</head>
+<body>
+  <h2>Press Release Generator</h2>
+  
+  <input id="topic" placeholder="Topic (e.g., 'Company X Launches New Product')" />
+  
+  <textarea id="keyPoints" rows="6" placeholder="Key points (one per line)"></textarea>
+  
+  <button id="generateBtn">Generate</button>
+  
+  <small class="hint">No API key in the browser — the server handles it.</small>
+  
+  <div id="output"></div>
+  
+  <script src="./script.js" defer></script>
+</body>
+</html>
